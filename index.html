@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<title>
+    Srite The Growth Journal Icon Survey 
+</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+<style>
+    .row{
+        width:720px;
+        margin: 10px auto 10px auto ;
+    }
+    .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:30px;
+    }
+</style>
+</head> 
+
+<body style="background-color: beige;">
+    <div class="row"> 
+        <div class="image-container"><img id="donut1" src="img/donut01.png" onmousedown="this.src='img/donut02.png';" onmouseup="this.src='img/donut01.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="donut2" src="img/donut02.png" onmousedown="this.src='img/donut01.png';" onmouseup="this.src='img/donut02.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="donut3" src="img/donut03.png" onmousedown="this.src='img/donut02.png';" onmouseup="this.src='img/donut03.png';" width="200" height="200"/></div> 
+    </div>
+
+    <div class="row"> 
+        <div class="image-container"><img id="donut4" src="img/donut01.png" onmousedown="this.src='img/donut02.png';" onmouseup="this.src='img/donut01.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="donut5" src="img/donut02.png" onmousedown="this.src='img/donut01.png';" onmouseup="this.src='img/donut02.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="donut6" src="img/donut03.png" onmousedown="this.src='img/donut02.png';" onmouseup="this.src='img/donut03.png';" width="200" height="200"/></div> 
+    </div>
+
+    <div class="row"> 
+        <div class="image-container"><img id="donut7" src="img/donut01.png" onmousedown="this.src='img/donut02.png';" onmouseup="this.src='img/donut01.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="donut8" src="img/donut02.png" onmousedown="this.src='img/donut01.png';" onmouseup="this.src='img/donut02.png';" width="200" height="200"/></div>
+        <div class="image-container"><img id="donut9" src="img/donut03.png" onmousedown="this.src='img/donut02.png';" onmouseup="this.src='img/donut03.png';" width="200" height="200"/></div> 
+    </div>
+      
+
+    <script>
+        var sound1 = new buzz.sound("sound/glitch1.mp3");
+        var sound2 = new buzz.sound("sound/glitch2.mp3");
+        var sound3 = new buzz.sound("sound/glitch3.mp3");
+        var sound4 = new buzz.sound("sound/glitch1.mp3");
+        var sound5 = new buzz.sound("sound/glitch2.mp3");
+        var sound6 = new buzz.sound("sound/glitch3.mp3");
+        var sound7 = new buzz.sound("sound/glitch1.mp3");
+        var sound8 = new buzz.sound("sound/glitch2.mp3");
+        var sound9 = new buzz.sound("sound/glitch3.mp3");
+ 
+        window.onload = function() {
+            document.getElementById('donut1').addEventListener('click', function () {sound1.play(); });  
+            document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+            document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+            document.getElementById('donut4').addEventListener('click', function () {sound4.play(); });
+            document.getElementById('donut5').addEventListener('click', function () {sound5.play(); }); 
+            document.getElementById('donut6').addEventListener('click', function () {sound6.play(); }); 
+            document.getElementById('donut7').addEventListener('click', function () {sound7.play(); }); 
+            document.getElementById('donut8').addEventListener('click', function () {sound8.play(); }); 
+            document.getElementById('donut9').addEventListener('click', function () {sound9.play(); });
+        }  
+    </script>
+</body>
+</html>  
